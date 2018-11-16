@@ -4,4 +4,10 @@ function log(req, res, next) {
     next();
 }
 
+function auth(req, res, next) {
+    console.log('Authentication...');
+    next();
+}
+
 module.exports = log;
+module.exports = auth;
